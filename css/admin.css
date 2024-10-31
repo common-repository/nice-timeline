@@ -1,0 +1,82 @@
+#nice_timelines .nice_timeline {
+	width: 340px;
+	display: inline-block;
+	margin: 5px;
+	background: #ddd;
+	padding: 5px;
+}
+
+#nice_timelines .nice_timeline img.remove, #nice_timeline img.remove {
+	cursor: pointer;
+}
+
+#nice_timelines .nice_timeline blockquote.shortcode {
+	font-size: 16px;
+}
+
+.form_ntl {
+	width: 460px;
+}
+
+.form_ntl label {
+	display: inline-block;
+	width: 120px;
+	vertical-align: top;
+}
+
+.form_ntl input[type=text], .form_ntl textarea, .form_ntl select {
+	width: 120px;
+}
+
+#nice_timeline li {
+	width: 480px;
+	display: inline-block;
+	margin-right: 10px;
+	background: #ccc;
+	padding: 10px;
+}
+
+#nice_timeline li img.thumbnail {
+	width: 100%;
+	cursor: move;
+}
+
+.form_etl .loading {
+	display: none;
+}
+
+.icon_line {
+	position: relative;
+}
+
+.form_etl .icons_list_search {
+    background: #ddd none repeat scroll 0 0;
+    left: 32px;
+    position: absolute;
+    top: 24px;
+    width: 200px;
+    z-index: 120;
+}
+
+.form_etl .icons_list_search ul {
+	margin: 0;
+	padding: 0;
+}
+
+.form_etl .icons_list_search ul li {
+	margin: 0 !important;
+	cursor: pointer;
+}
+
+.form_etl .icons_list_search ul li i {
+	margin-right: 3px;
+}
+
+#events_timeline li.timeline_content {
+    background: #ddd none repeat scroll 0 0;
+    display: inline-block;
+    margin: 5px;
+    padding: 5px;
+    width: 340px;
+    cursor: move;
+}

@@ -1,0 +1,134 @@
+div.nice_timeline_h {
+	width: 100%;
+	position: relative;
+	overflow: hidden;
+	padding: 100px 0;
+}
+
+div.nice_timeline_v {
+	width: 30%;
+	min-width: 360px;
+	position: relative;
+	overflow: hidden;
+	height: 700px;
+	display: inline-block;
+}
+
+div.nice_timeline_content_h {
+	margin-top: 20px;
+}
+
+div.nice_timeline_content_v {
+	height: 700px;
+	display: inline-block;
+	vertical-align: top;
+	padding-left: 1%;
+	box-sizing: border-box;
+}
+
+div.nice_timeline_v .timeline_content {
+	max-width: 140px;
+}
+
+div.nice_timeline_h .timeline_content {
+	max-width: 200px;
+	float: left;
+	height: 24px;
+}
+
+div.nice_timeline_v .timeline_content {
+	width: 50%;
+}
+
+div.nice_timeline_h .timeline_content:nth-child(even) {
+	transform: translateY(-100%);
+}
+
+div.nice_timeline_h .timeline_content:nth-child(odd) {
+	transform: translateY(125%);
+}
+
+div.nice_timeline_h .timeline_content:nth-child(even)::before {
+    content: "";
+    display: block;
+    height: 25px;
+    left: 50%;
+    position: absolute;
+    top: 42px;
+    width: 5px;
+}
+
+div.nice_timeline_h .timeline_content:nth-child(odd)::before {
+    content: "";
+    display: block;
+    height: 25px;
+    left: 50%;
+    position: absolute;
+    top: -25px;
+    width: 5px;
+}
+
+div.nice_timeline_v .timeline_content:nth-child(even) {
+	transform: translateX(0%);
+}
+
+div.nice_timeline_v .timeline_content:nth-child(odd) {
+	transform: translateX(125%);
+}
+
+div.nice_timeline_v .timeline_content:nth-child(even)::before {
+    content: "";
+    display: block;
+    height: 5px;    
+    position: absolute;
+    top: 50%;
+    right: -25px;
+    width: 25px;
+}
+
+div.nice_timeline_v .timeline_content:nth-child(odd)::before {
+    content: "";
+    display: block;
+    height: 5px;
+    position: absolute;
+    top: 50%;
+    left: -25px;
+    width: 25px;
+}
+
+div.nice_timeline .timeline_content {
+	padding: 10px;
+	border-radius: 20px;
+	position: absolute;
+	opacity: 0.7;
+}
+
+div.nice_timeline .timeline_content:hover,
+div.nice_timeline .timeline_content.active {
+	opacity: 1;
+}
+
+div.nice_timeline .timeline_content h3 {
+	margin: 0;
+	cursor: pointer;
+	
+}
+
+div.nice_timeline .timeline_content .content {
+	overflow: hidden;
+	display: none;
+	position: absolute;
+}
+
+div.nice_timeline_h span.timeline {
+	display: block;
+    height: 10px;
+    transform: translateY(230%);
+}
+
+div.nice_timeline_v span.timeline {
+	display: block;
+	width: 10px;
+    height: 100%;
+    margin: 0 auto;
+}
